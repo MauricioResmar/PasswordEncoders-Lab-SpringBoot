@@ -198,7 +198,7 @@ definiendo uno de los @Bean como @Primary **con lo cual le indicamos al componen
 public class SecurityConfig {
     
     @Bean
-    Primary
+    @Primary
     public PasswordEncoder bcryptEncoder() {
         return new BCryptPasswordEncoder();
     }
@@ -238,6 +238,10 @@ Contraseñas iguales → hashes distintos
 **SCrypt:** alto consumo de memoria
 
 **DelegatingPasswordEncoder:** flexibilidad futura
+
+![img_5.png](img_5.png)
+
+![img_6.png](img_6.png)
 
 ✅ **Conclusiones**
 
